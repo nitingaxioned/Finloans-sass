@@ -1,5 +1,13 @@
+//transform ttrantlet
 @mixin translate($valX, $valY) {
     -webkit-transform: translate($valX, $valY);
     -ms-transform: translate($valX, $valY);
     transform: translate($valX, $valY);
 }
+
+// gradient
+@mixin gradient($color-1,$color-2) {
+    background-image: -webkit-gradient(linear,left top, left bottom,from($color-1),to($color-2));
+    background-image: -o-linear-gradient($color-1,$color-2);
+    background-image: linear-gradient($color-1,$color-2); 
+  }

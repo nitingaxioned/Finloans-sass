@@ -117,10 +117,16 @@ li {
   margin: 0 auto;
 }
 
-.banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
+.offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.offers__plans {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header {
@@ -195,9 +201,7 @@ li {
 /*=================================
   main styling starts here for index
 =================================*/
-/*=================================
-  banner styling starts here
-=================================*/
+/* banner section starts */
 .banner {
   background-image: url("https://via.placeholder.com/1349x888");
 }
@@ -292,6 +296,89 @@ li {
   text-transform: capitalize;
 }
 
-/*=================================
-  banner styling ends here
-=================================*/
+/* banner section ends */
+/* offers section starts */
+.offers {
+  padding: 156px 0 100px;
+  text-align: center;
+}
+.offers__heading h2 {
+  position: relative;
+  font-size: 45px;
+  padding: 16px 0 20px;
+}
+.offers__heading h2::before {
+  content: "";
+  width: 6%;
+  padding: 2px 0 1px;
+  position: absolute;
+  left: 47%;
+  top: 0;
+  background-color: #33d4d6;
+  text-align: center;
+}
+.offers__heading p {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 600;
+}
+.offers__plans {
+  margin: 91px 0 47px;
+}
+.offers__plans__plan {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#098afd), to(#054681));
+  background-image: -o-linear-gradient(#098afd, #054681);
+  background-image: linear-gradient(#098afd, #054681);
+  width: 31.5%;
+  padding: 40px 0;
+  border-radius: 5px;
+}
+.offers__plans__plan li {
+  display: block;
+}
+.offers__plans__plan img {
+  padding: 4px 0;
+  width: 70px;
+}
+.offers__plans__plan > ul > li:nth-child(2) {
+  margin: 35px 0 20px;
+  font-size: 15px;
+  color: #d8d8d8;
+  text-transform: capitalize;
+}
+.offers__plans__plan > ul > li:nth-child(3) {
+  color: #33d4d6;
+  font-size: 28px;
+}
+.offers__plans__plan a {
+  padding: 15px 25%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #33d4d6;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.offers__plans .feature {
+  padding: 35px 10% 3px;
+  border-top: 1px solid #267dcb;
+  margin: 35px 0;
+}
+.offers__plans .feature li {
+  padding: 7px 5%;
+  color: #e1e4ef;
+  text-align: left;
+}
+.offers__plans .feature li:first-child {
+  padding-top: 1px;
+}
+.offers__plans .feature li::before {
+  content: "\f111";
+  margin-right: 3%;
+  position: relative;
+  bottom: 3px;
+  color: #33d4d6;
+  font-size: 10px;
+  font-family: "fontAwesome";
+}
+
+/* offers section ends */
