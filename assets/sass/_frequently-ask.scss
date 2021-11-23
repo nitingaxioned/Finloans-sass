@@ -25,10 +25,9 @@
         }
 
         h3 {
-            padding: 18px 0;
+            padding: 23px 0 13px;
             border-bottom: 1px solid #dbdbdb;
             font-size: 18px;
-            @include translate(0 , 5px);
 
             &::before {
                 @include set-icon('\f107',20px,null);
@@ -41,7 +40,7 @@
         &__show {
             h3 { 
                 border: 0;
-                @include translate(0 , -5px);
+                @include translate(0 , -10px);
                 &::before {@include set-icon('\f106',20px,null);}
             }
 

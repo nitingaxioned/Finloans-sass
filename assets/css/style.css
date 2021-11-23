@@ -117,13 +117,13 @@ li {
   margin: 0 auto;
 }
 
-.frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
+.testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
+.testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -491,12 +491,9 @@ li {
   max-height: 0;
 }
 .frequently-ask__ask h3 {
-  padding: 18px 0;
+  padding: 23px 0 13px;
   border-bottom: 1px solid #dbdbdb;
   font-size: 18px;
-  -webkit-transform: translate(0, 5px);
-  -ms-transform: translate(0, 5px);
-  transform: translate(0, 5px);
 }
 .frequently-ask__ask h3::before {
   content: "\f107";
@@ -510,9 +507,9 @@ li {
 }
 .frequently-ask__ask__show h3 {
   border: 0;
-  -webkit-transform: translate(0, -5px);
-  -ms-transform: translate(0, -5px);
-  transform: translate(0, -5px);
+  -webkit-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  transform: translate(0, -10px);
 }
 .frequently-ask__ask__show h3::before {
   content: "\f106";
@@ -531,3 +528,59 @@ li {
 }
 
 /* frequently-ask section ends */
+/* testimonial section starts */
+.testimonial__slider {
+  width: 89%;
+  margin: 150px 0;
+}
+.testimonial__slide {
+  display: none;
+}
+.testimonial__slide--active img {
+  border-radius: 50%;
+}
+.testimonial__slide--active div {
+  width: 70%;
+  margin-top: 50px;
+  font-size: 17.5px;
+  line-height: 1.7;
+}
+.testimonial__slide--active span {
+  margin-top: 15px;
+  display: block;
+  color: #838b93;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.testimonial__slider-controls {
+  width: 4.5%;
+  margin-top: 200px;
+}
+.testimonial__slider-controls li {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 50%;
+  margin: 5px 0;
+  background-color: #e6f3ff;
+  text-align: center;
+}
+.testimonial__slider-controls a {
+  color: #52aeff;
+  text-indent: -9999px;
+}
+.testimonial__slider-controls li:first-child a::before {
+  content: "\f105";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 24px;
+  text-indent: 0;
+}
+.testimonial__slider-controls li:last-child a::before {
+  content: "\f104";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 24px;
+  text-indent: 0;
+}
+
+/* testimonial section ends */
