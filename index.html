@@ -1,6 +1,7 @@
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Finloans | Home</title>
@@ -12,11 +13,12 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico" />
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
+
 <body>
   <!--container start-->
   <div class="container">
@@ -64,12 +66,49 @@
     <!--header section end-->
     <!--main section start-->
     <main>
-
+      <!--banner section start-->
+      <section class="banner">
+        <div class="wrapper">
+          <div class="banner__details">
+            <h2>get Loan for your Business growth or startup</h2>
+            <a href="#FIXME" title="How it works" class="banner__works-btn">how it works</a>
+          </div>
+          <div class="banner__quick-loan">
+            <h3>how much do you want?</h3>
+            <p>we provide online instant cash loans with quick</p>
+            <form action="#FIXME" class="banner__form">
+              <div class="banner__form-group">
+                <select name="amount" class="banner__select-amount">
+                  <option value="">amount</option>
+                  <option value="$1000">$1000</option>
+                  <option value="$5000">$5000</option>
+                  <option value="$10000">$10000</option>
+                </select>
+                <span class="banner__error hide-me">Errors</span>
+              </div>
+              <div class="banner__form-group">
+                <select name="month" class="banner__select-month">
+                  <option value="">month</option>
+                  <option value="3">3 Months</option>
+                  <option value="6">6 Months</option>
+                  <option value="12">12 Months</option>
+                </select>
+                <span class="banner__error hide-me">Errors</span>
+              </div>
+              <p>you have to pay: $0</p>
+              <div class="banner__form-control">
+                <input type="submit" class="banner__input" value="Continue">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--banner section end-->
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -77,4 +116,5 @@
   <!--container end-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
