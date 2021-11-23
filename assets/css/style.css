@@ -1,0 +1,184 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.header__connect, .header__nav-list, .header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .wrapper {
+  width: 100%;
+  font-size: 13px;
+}
+.header h1 {
+  margin: 20px 0 0 2.5%;
+}
+.header__nav {
+  margin: 36px 0 0 19.6%;
+  width: 50%;
+  -webkit-transform: translate(2.2%, 0);
+  -ms-transform: translate(2.2%, 0);
+  transform: translate(2.2%, 0);
+}
+.header__nav-list li {
+  margin: 0 4.7% 0 0;
+}
+.header__sub-menu a::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+}
+.header__sub-menu-list {
+  display: none;
+}
+.header__connect {
+  width: 24%;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.header__contact-no {
+  margin: 38px 0 0 0;
+  font-size: 12px;
+  width: 48%;
+  color: #33d4d6;
+}
+.header__contact-no a {
+  letter-spacing: 0.3px;
+}
+.header__contact-no::before {
+  content: "\f095";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  padding: 0 3.5% 0 2%;
+}
+.header__apply-loan-btn {
+  text-transform: capitalize;
+  width: 52%;
+}
+.header__apply-loan-btn a {
+  color: #33d4d6;
+  border: 1px solid #33d4d6;
+  margin: 21px 0 0 0;
+  padding: 13px 5% 14px;
+  border-radius: 5px;
+  -webkit-transform: translate(-11%, 0);
+  -ms-transform: translate(-11%, 0);
+  transform: translate(-11%, 0);
+}
