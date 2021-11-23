@@ -113,16 +113,21 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 83%;
+  width: 81.32%;
   margin: 0 auto;
 }
 
-.header__connect, .header__nav-list, .header .wrapper {
+.banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
 .header .wrapper {
   width: 100%;
   font-size: 13px;
@@ -139,6 +144,9 @@ li {
 }
 .header__nav-list li {
   margin: 0 4.7% 0 0;
+}
+.header__nav-list li a {
+  color: #ffffff;
 }
 .header__sub-menu a::after {
   content: "\f107";
@@ -160,6 +168,7 @@ li {
   color: #33d4d6;
 }
 .header__contact-no a {
+  color: #ffffff;
   letter-spacing: 0.3px;
 }
 .header__contact-no::before {
@@ -182,3 +191,107 @@ li {
   -ms-transform: translate(-11%, 0);
   transform: translate(-11%, 0);
 }
+
+/*=================================
+  main styling starts here for index
+=================================*/
+/*=================================
+  banner styling starts here
+=================================*/
+.banner {
+  background-image: url("https://via.placeholder.com/1349x888");
+}
+.banner .wrapper {
+  background-color: #05468150;
+  width: 81.32%;
+  padding: 200px 9.34% 200px;
+}
+.banner__details {
+  width: 50%;
+}
+.banner__works-btn {
+  background: #33d4d6;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 15px 5.3% 16px;
+  margin: 38px 0;
+}
+.banner h2 {
+  margin: 86px 0 0 0;
+  color: #ffffff;
+  font-size: 58.5px;
+  line-height: 75px;
+}
+.banner__quick-loan {
+  width: 40%;
+  padding: 50px 0%;
+  margin: 0 0 0 10%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.banner__quick-loan h3 {
+  font-size: 30px;
+}
+.banner__quick-loan p {
+  margin: 27px 0 30px;
+  color: #999999;
+  font-size: 16px;
+}
+.banner__form {
+  margin: 0 11%;
+  text-align: left;
+}
+.banner__form .form-group {
+  position: relative;
+}
+.banner__form .form-group:first-child:after, .banner__form .form-group:nth-child(2):after {
+  content: "\f0d7";
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  color: #999999;
+  font-family: "fontAwesome";
+  pointer-events: none;
+}
+.banner__form p {
+  margin: 40px 0% 42px;
+}
+.banner__form select {
+  width: 100%;
+  padding: 16px 5%;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  color: #999999;
+  margin-top: 15px;
+  outline: none;
+  text-transform: capitalize;
+  appearance: none;
+}
+.banner__error {
+  width: auto;
+  padding: 2px 0;
+  display: block;
+  z-index: 10;
+  position: absolute;
+  background-color: #ff4949;
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0;
+}
+.banner__input {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1%;
+  background-color: #33d4d6;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/*=================================
+  banner styling ends here
+=================================*/

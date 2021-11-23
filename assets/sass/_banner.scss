@@ -1,0 +1,109 @@
+.banner{
+    background-image: url("https://via.placeholder.com/1349x888");
+
+    .wrapper{ 
+        background-color: #05468150; 
+        width: 81.32%;
+        padding: 200px 9.34% 200px;
+        @extend %flex;
+    }
+
+    &__details{
+        width: 50%;
+    }
+
+    &__works-btn{
+        background: $PRIMERYCOLOR;
+        border-radius: 5px;
+        text-transform: capitalize;
+        color: #ffffff;
+        padding: 15px 5.3% 16px;
+        margin: 38px 0;
+    }
+
+    h2 {
+        margin: 86px 0 0 0;
+        color: $BASEFONTCOLOR;
+        font-size: 58.5px;
+        line-height: 75px;
+    }
+
+    &__quick-loan{
+        width: 40%;
+        padding: 50px 0%;
+        margin: 0 0 0 10%;
+        border-radius: 5px;
+        background-color: $BASEFONTCOLOR;
+        text-align: center;
+
+        h3{
+            font-size: 30px;
+        }
+
+        p{
+            margin: 27px 0 30px;
+            color: #999999;
+            font-size: 16px;
+        }
+
+    }
+
+    &__form{
+        margin: 0 11%;
+        text-align: left;
+        .form-group {
+            position: relative;
+
+            &:first-child:after,
+            &:nth-child(2):after {
+                content: '\f0d7';
+                position: absolute;
+                top: 30px;
+                right: 5%;
+                color: #999999;
+                font-family: 'fontAwesome';
+                pointer-events: none;
+            }
+        }
+
+        p{
+            margin: 40px 0% 42px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 16px 5%;
+            border: 1px solid #dfdfdf;
+            border-radius: 5px;
+            color: #999999;
+            margin-top: 15px;
+            outline: none;
+            text-transform: capitalize;
+            appearance: none;
+        }         
+    }
+
+    &__error {
+        width: auto;
+        padding: 2px 0;
+        display: block;
+        z-index: 10;
+        position: absolute;
+        background-color: #ff4949;
+        color: #ffffff;
+        font-size: 12px;
+        opacity: 0;
+    }   
+
+    &__input {
+        width: 100%;
+        padding: 16px 0;
+        border: none;
+        border-radius: 5px;
+        margin-right: 1%;
+        background-color: #33d4d6;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+}
