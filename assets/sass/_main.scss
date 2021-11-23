@@ -3,13 +3,17 @@
 =================================*/
 
 /* banner section starts */
-@import "banner";
+@import "banner.scss";
 /* banner section ends */
 
 /* offers section starts */
-@import "offers";
+@import "offers.scss";
 /* offers section ends */
 
 /* choose-us section starts */
 @import "chooseUs.scss";
 /* choose-us section ends */
+
+/* works section starts */
+@import "works.scss";
+/* works section ends */

@@ -1,0 +1,43 @@
+.works {
+    padding: 158px 0;
+    margin-top: 124px;
+    background-color: #f5fbff;
+    text-align: center;
+
+    &__heading{
+        @extend .offers__heading;
+    }
+
+    ul {
+        @extend %flex;
+        @extend %justifySpaceBetween;
+        margin: 92px 0 0;
+    }
+
+    li {
+        width: 31%;
+        text-align: left;
+    }
+
+    span {
+        width: 20%;
+        padding: 25px 0;
+        border-radius: 50px;
+        display: block;
+        background-color: #ddf0ff;
+        color: #2c95ff;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin: 20px 0 16px;
+        font-size: 25px;
+    }
+
+    li p {
+        width: 90%;
+        color: #999999;
+        line-height: 1.6;
+    }
+}
