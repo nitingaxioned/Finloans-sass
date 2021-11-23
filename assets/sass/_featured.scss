@@ -1,0 +1,10 @@
+.featured {
+    margin: 20px 0;
+
+    .wrapper { width: 77%}
+
+    &__image-list { 
+        @extend %flex;
+        @extend %justifySpaceBetween;
+    }
+}

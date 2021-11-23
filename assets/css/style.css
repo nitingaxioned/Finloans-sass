@@ -117,13 +117,13 @@ li {
   margin: 0 auto;
 }
 
-.testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
+.featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
+.featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -584,3 +584,11 @@ li {
 }
 
 /* testimonial section ends */
+/* featured section starts */
+.featured {
+  margin: 20px 0;
+}
+.featured .wrapper {
+  width: 77%;
+}
+/* featured section ends */
