@@ -10,4 +10,13 @@
     background-image: -webkit-gradient(linear,left top, left bottom,from($color-1),to($color-2));
     background-image: -o-linear-gradient($color-1,$color-2);
     background-image: linear-gradient($color-1,$color-2); 
-  }
+}
+
+//set icon
+@mixin set-icon($icon,$size:10px,$float:right) {
+    content: $icon;
+    float: $float;
+    font-family: 'fontAwesome';
+    font-size: $size;
+    text-indent: 0;
+}

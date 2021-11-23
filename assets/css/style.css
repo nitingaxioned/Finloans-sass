@@ -117,13 +117,13 @@ li {
   margin: 0 auto;
 }
 
-.offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
+.choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.offers__plans {
+.choose-us .wrapper, .offers__plans {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -382,3 +382,51 @@ li {
 }
 
 /* offers section ends */
+/* choose-us section starts */
+.choose-us__why {
+  width: 45.7%;
+}
+.choose-us__why > li {
+  margin-left: 7%;
+}
+.choose-us__why > li:nth-child(3) {
+  width: 100%;
+}
+.choose-us__why ul li {
+  margin: 12px 0;
+  display: block;
+}
+.choose-us__why ul li:first-child {
+  margin-top: 0;
+}
+.choose-us__why ul li::before {
+  content: "\f111";
+  font-family: "fontAwesome";
+  font-size: 10px;
+  text-indent: 0;
+  margin-right: 3%;
+  position: relative;
+  bottom: 2px;
+  color: #0d8eff;
+}
+.choose-us h2 {
+  margin-top: 85px;
+  font-size: 43px;
+  text-transform: capitalize;
+}
+.choose-us p {
+  margin: 37px 0 20px;
+  color: #999999;
+  line-height: 1.8;
+}
+.choose-us a {
+  width: 100%;
+  padding: 15px 44% 16px;
+  border-radius: 5px;
+  margin: 45px 0 0;
+  background-color: #33d4d6;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+/* choose-us section ends */

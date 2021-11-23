@@ -1,0 +1,53 @@
+.choose-us {
+    .wrapper {
+        @extend %flex;
+        @extend %justifySpaceBetween;
+    }
+
+    &__why { 
+        width: 45.7%;
+    
+        > li { margin-left: 7%;}
+        > li:nth-child(3) { width: 100%;}
+
+        ul {
+            li {
+                margin: 12px 0;
+                display: block;
+            }
+
+            li:first-child { margin-top: 0;}
+
+            li::before {
+                @include set-icon('\f111',10px,null);                
+                margin-right: 3%;
+                position: relative;
+                bottom: 2px;
+                color: #0d8eff;
+            }
+        }
+
+    }
+
+    h2 {
+        margin-top: 85px;
+        font-size: 43px;
+        text-transform: capitalize;
+    }
+
+    p {
+        margin: 37px 0 20px;
+        color: #999999;
+        line-height: 1.8;
+    }
+
+    a {
+        width: 100%;
+        padding: 15px 44% 16px;
+        border-radius: 5px;
+        margin: 45px 0 0;
+        background-color: $PRIMERYCOLOR;
+        color: $BASEFONTCOLOR;
+        text-transform: capitalize;
+    }
+}
