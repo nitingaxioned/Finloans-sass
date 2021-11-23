@@ -1,0 +1,60 @@
+.frequently-ask {
+    .wrapper {
+        @extend %flex;
+        @extend %justifySpaceBetween;
+        width: 100%;
+    }
+
+    figure { width: 53%;}
+    img { width: 100%;}
+
+    &__ask {
+        width: 40%;
+        padding: 0 6% 0 5.5%;
+
+        h2 {
+            margin: 127px 0 50px;
+            font-size: 43px;
+        }
+
+        li { 
+            display: block;
+            overflow: hidden;
+
+            p { max-height: 0;}
+        }
+
+        h3 {
+            padding: 18px 0;
+            border-bottom: 1px solid #dbdbdb;
+            font-size: 18px;
+            @include translate(0 , 5px);
+
+            &::before {
+                @include set-icon('\f107',20px,null);
+                padding: 0 4% 0 2%;
+            }
+
+            p { width: 80%; }
+        }
+
+        &__show {
+            h3 { 
+                border: 0;
+                @include translate(0 , -5px);
+                &::before {@include set-icon('\f106',20px,null);}
+            }
+
+
+            p {
+                width: 80%;
+                padding: 2px 6% 36px;
+                border-bottom: 1px solid #dbdbdb;
+                color: #798299;
+                font-size: 15px;
+                line-height: 1.8;
+                min-height: 50px;
+            }
+        }
+    }
+}
