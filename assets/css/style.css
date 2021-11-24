@@ -117,13 +117,13 @@ li {
   margin: 0 auto;
 }
 
-.apply-loan__text, .featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
+footer .details__subscribe form, footer .details__contact__social-media, footer .details, .apply-loan__text, .featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans, .banner .wrapper, .header__connect, .header__nav-list, .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.apply-loan__text, .featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
+footer .details__subscribe form, footer .details, .apply-loan__text, .featured__image-list, .testimonial__slide--active, .testimonial .wrapper, .frequently-ask .wrapper, .works ul, .choose-us .wrapper, .offers__plans {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -595,7 +595,7 @@ li {
 /* apply-loan section starts */
 .apply-loan {
   padding: 138px 0;
-  margin: 176px 0 150px;
+  margin: 176px 0 120px;
   background-image: url("https://via.placeholder.com/1349x379");
 }
 .apply-loan__text {
@@ -622,3 +622,148 @@ li {
 }
 
 /* apply-loan section ends */
+footer {
+  margin-bottom: 54px;
+}
+footer .details {
+  padding: 15px 0 0;
+  position: relative;
+}
+footer .details li {
+  display: block;
+}
+footer .details__contact {
+  width: 30%;
+}
+footer .details__contact > li {
+  margin: 5px 0;
+}
+footer .details__contact img {
+  width: 45%;
+  margin-bottom: 50px;
+}
+footer .details__contact a {
+  font-size: 14px;
+  color: #999999;
+}
+footer .details__contact__social-media li {
+  width: 5%;
+  padding: 6px 2%;
+  border: 1px solid #999999;
+  border-radius: 50px;
+  margin: 50px 2%;
+  text-align: center;
+}
+footer .details__contact__social-media a {
+  text-indent: -9999px;
+}
+footer .details__contact__social-media li:first-child a::after {
+  content: "\f09a";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+}
+footer .details__contact__social-media li:nth-child(2) a::after {
+  content: "\f0d5";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+}
+footer .details__contact__social-media li:nth-child(3) a::after {
+  content: "\f099";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+}
+footer .details__contact__social-media li:nth-child(4) a::after {
+  content: "\f16d";
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 16px;
+  text-indent: 0;
+}
+footer .details__services, footer .details__links {
+  width: 14%;
+  margin-left: 4%;
+}
+footer .details__services li:first-child, footer .details__links li:first-child {
+  margin: 0;
+}
+footer .details__services h3, footer .details__links h3 {
+  margin: 5px 0 55px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+footer .details__services li, footer .details__links li {
+  margin: 20px 0;
+}
+footer .details__services a, footer .details__links a {
+  color: #999999;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+footer .details__subscribe {
+  position: relative;
+  left: 3%;
+}
+footer .details__subscribe h3 {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+footer .details__subscribe form {
+  width: 90%;
+  padding: 2px 0.5%;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+footer .details__subscribe input {
+  padding: 10px 5%;
+  border: 0;
+  outline: none;
+}
+footer .details__subscribe span {
+  display: none;
+}
+footer .details__subscribe button {
+  padding: 10px 30%;
+  border: 0;
+  border-radius: 5px;
+  margin-left: -60%;
+  background-color: #0a8cff;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+footer .details__subscribe p {
+  width: 80%;
+  margin: 20px 0;
+  font-size: 12px;
+  line-height: 2;
+  color: #999999;
+}
+footer .wrapper > p {
+  margin: 100px auto 40px;
+  color: #939ba1;
+  text-align: center;
+  font-size: 15px;
+}
+footer .copyright::before {
+  content: "\f1f9";
+  font-size: 12px;
+  font-family: "fontAwesome";
+}
+footer .by::before {
+  content: "\f08a";
+  font-family: "fontAwesome";
+  margin-right: 0.5%;
+}
+footer p > a {
+  color: #63b5ff;
+  text-transform: capitalize;
+  font-weight: 600;
+}

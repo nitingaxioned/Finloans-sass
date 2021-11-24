@@ -1,0 +1,144 @@
+footer {
+    margin-bottom: 54px;
+
+    .details {
+        @extend %flex;
+        @extend %justifySpaceBetween;
+        padding: 15px 0 0;
+        position: relative;
+        li { display: block;}
+
+        &__contact { 
+            width: 30%;
+
+            > li { margin: 5px 0;}
+        
+            img {
+                width: 45%;
+                margin-bottom: 50px;
+            }
+
+            a {
+                font-size: 14px;
+                color: #999999
+            }
+        }
+
+        &__contact__social-media {
+            @extend %flex;
+
+            li {
+                width: 5%;
+                padding: 6px 2%;
+                border: 1px solid #999999;
+                border-radius: 50px;
+                margin: 50px 2%;
+                text-align: center;
+            }
+
+            a { text-indent: -9999px;}
+
+            li:first-child a::after { @include set-icon('\f09a',16px)}
+            li:nth-child(2) a::after { @include set-icon('\f0d5',16px)}
+            li:nth-child(3) a::after { @include set-icon('\f099',16px)}
+            li:nth-child(4) a::after { @include set-icon('\f16d',16px)}
+        }
+
+        &__services {
+            width: 14%;
+            margin-left: 4%;
+
+            li:first-child { margin: 0;}
+
+            h3 {
+                margin: 5px 0 55px;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            li { margin: 20px 0;}
+
+            a { 
+                color: #999999;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }
+
+        &__links { @extend .details__services;}
+
+        &__subscribe {
+
+            position: relative;
+            left: 3%;
+
+            h3 {
+                margin-bottom: 40px;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            form {
+                @extend %flex;
+                @extend %justifySpaceBetween;
+                width: 90%;
+                padding: 2px 0.5%;
+                border: 1px solid #999999;
+                border-radius: 5px;
+            }
+
+            input {
+                padding: 10px 5%;
+                border: 0;
+                outline: none;
+            }
+
+            span { display: none;}
+
+            button {
+                padding: 10px 30%;
+                border: 0;
+                border-radius: 5px;
+                margin-left: -60%;
+                background-color: #0a8cff;
+                color: $BASEFONTCOLOR;
+                text-transform: capitalize;
+            }
+
+            p {
+                width: 80%;
+                margin: 20px 0;
+                font-size: 12px;
+                line-height: 2;
+                color: #999999;
+            }
+        }
+    }
+
+    .wrapper > p {
+        margin: 100px auto 40px;
+        color: #939ba1;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .copyright::before {
+        content: '\f1f9';
+        font-size: 12px;
+        font-family: 'fontAwesome';
+    }
+
+    .by::before {
+        content: '\f08a';
+        font-family: 'fontAwesome';
+        margin-right: 0.5%;
+    }
+
+    p > a {
+        color: #63b5ff;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
